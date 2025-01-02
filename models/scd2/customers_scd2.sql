@@ -8,7 +8,6 @@ SELECT
   customer_id,
   name,
   status,
-  -- Only the latest row will be marked as current
   CASE
     WHEN dbt_valid_to IS NULL THEN TRUE
     ELSE FALSE

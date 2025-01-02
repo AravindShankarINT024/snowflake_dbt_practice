@@ -2,14 +2,16 @@ WITH snapshot_data AS (
     SELECT 
         *
     FROM    
-        {{ ref('customers_snapshot') }}
+        {{ ref('source_snapshot_scd1') }}
+    WHERE
+        dbt_valid_to IS NULL
 )
 
 SELECT  
-    customer_id,
+    id,
     name,
-    status
+    email,
+    updated_at
 FROM    
     snapshot_data
-WHERE
-    dbt_valid_to IS NULL
+
