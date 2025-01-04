@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: src
+    database: retail_shop  
+    tables:
+      - name: retail_shop

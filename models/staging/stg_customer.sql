@@ -1,11 +1,11 @@
 WITH src_customer AS (
     SELECT
-        customerid,
+        customerid AS customer_id,
         age,
         gender,
-        annualincome
+        annualincome AS annual_income
     FROM 
-        src.retail_shop
+        {{ source('src', 'retail_shop') }}
     GROUP BY
         customerid,
         age,
