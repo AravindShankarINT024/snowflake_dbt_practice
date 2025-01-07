@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: description
+    columns:
+      - name: customer_key
+        description: Surrogate key
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Customer ID
+        tests:
+          - not_null
+      - name: age
+        description: Age of the customer
+        tests:
+          - not_null
+      - name: gender
+        description: Gender of the customer
+        tests:
+          - not_null
+      - name: annual_income
+        description: Annual income of the customer
+        tests:
+          - not_null
+      - name: created_by
+        description: Created user
+        tests:
+          - not_null
+      - name: created_date
+        description: Created Date
+        tests:
+          - not_null
+      - name: updated_by
+        description: Updated User
+      - name: updated_date
+        description: Updated Date
+      - name: flag
+        description: Flag column
+        
+        

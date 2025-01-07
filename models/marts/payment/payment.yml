@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_payment
+    description: description
+    columns:
+      - name: payment_key
+        description: surrogate key of the Payment
+        tests:
+          - unique
+          - not_null
+      - name: payment_method
+        description: Method of payment
+        tests:
+          - not_null
+      - name: created_by
+        description: Created user
+        tests:
+          - not_null
+      - name: created_date
+        description: Created Date
+        tests:
+          - not_null
+      - name: updated_by
+        description: Updated User
+      - name: updated_at
+        description: Updated Date

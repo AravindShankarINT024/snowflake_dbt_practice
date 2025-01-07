@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_store
+    description: description
+    columns:
+      - name: store_key
+        description: a 
+        tests:
+          - unique 
+          - not_null
+      - name: store_id
+        description: a 
+        tests: 
+          - not_null
+      - name: store_location
+        description: a 
+        tests:
+          - not_null
+      - name: created_by
+        description: a 
+        tests: 
+          - not_null
+      - name: created_date
+        description: a 
+        tests:
+          - not_null
+      - name: updated_by
+        description: a 
+      - name: updated_date
+        description: a 

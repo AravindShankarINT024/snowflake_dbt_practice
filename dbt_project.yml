@@ -42,3 +42,7 @@ models:
       materialized: view
       database: retail_shop
       schema: stg
+    marts:
+      materialized: table
+      database: retail_shop
+      schema: tgt

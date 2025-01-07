@@ -1,5 +1,6 @@
 WITH src_customer AS (
     SELECT
+        MD5(CONCAT(customerid, age, gender, annualincome)) AS customer_key,
         customerid AS customer_id,
         age,
         gender,

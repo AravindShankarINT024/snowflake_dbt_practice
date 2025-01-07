@@ -1,11 +1,11 @@
 {% snapshot customer_snapshot %}
     {{
         config(
-            target_schema='schema',
-            target_database='database',
-            unique_key='field',
+            target_schema='snapshot',
+            target_database='retail_shop',
+            unique_key='customer_id',
             strategy='check',
-            updated_at='updated_at_field',
+            check_cols=['age', 'annual_income']
         )
     }}
 

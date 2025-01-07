@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: a 
+    columns:
+      - name: product_key
+        description: surrogate key of the product 
+        tests:
+          - unique
+          - not_null
+      - name: product_category
+        description: Category of the Product 
+        tests:
+          - not_null
+      - name: created_by
+        description: created user 
+        tests:
+          - not_null
+      - name: created_date
+        description: Created Date
+        tests:
+          - not_null 
+      - name: updated_by
+        description: updated user
+      - name: updated_date 
+        description: updated data        
+              
+              
+              
